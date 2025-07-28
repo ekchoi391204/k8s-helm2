@@ -1,0 +1,28 @@
+db:
+  repository: public.ecr.aws/s0d0d6r5/frodo-lab2
+  tag: db-v1
+  replicas: 1
+
+redis:
+  repository: public.ecr.aws/s0d0d6r5/frodo-lab2
+  tag: redis-v1
+  replicas: 1
+
+app:
+  repository: public.ecr.aws/s0d0d6r5/frodo-lab2
+  tag: app-v1
+  replicas: 1
+
+nginx:
+  repository: nginx
+  tag: latest
+  replicas: 1
+
+
+ingress:
+  healthCheckPath: /healthz
+  host: app.frodo.kr
+  certificateArn: arn:aws:acm:ap-northeast-2:227250033304:certificate/5a71909b-2507-4f4e-a501-a0b6e2cb4b36
+  group:
+    name: shared-alb
+    order: "10"
