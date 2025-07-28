@@ -1,4 +1,5 @@
 name: release
+
 on:
   push:
     branches: [main]
@@ -8,7 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+
       - name: Publish Helm charts
         uses: stefanprodan/helm-gh-pages@master
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          charts_dir: charts
+          commit_username: ekchoi391204
+          commit_email: ekchoi391204@users.noreply.github.com
