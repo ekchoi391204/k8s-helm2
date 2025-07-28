@@ -10,7 +10,7 @@ redis:
 
 app:
   repository: public.ecr.aws/s0d0d6r5/frodo-lab2
-  tag: version-2
+  tag: version-3
   replicas: 1
 
 nginx:
