@@ -3,12 +3,12 @@ entries:
   myapp-chart:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-07-28T18:11:50.841200016Z"
+    created: "2025-07-28T18:22:44.577626677Z"
     description: A Helm chart with image and replicas as variables
-    digest: e8b79d401854b4674172a4e3f17f0b97b46c2dba639266f0db2ee744d5cd5a23
+    digest: da3377e9a48dc5eb9ecf1a6b19bae7e749d30f1c893fed5189c850a5b37d0858
     name: myapp-chart
     type: application
     urls:
     - https://ekchoi391204.github.io/k8s-helm2/myapp-chart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-07-28T18:11:50.840742575Z"
+generated: "2025-07-28T18:22:44.576143809Z"
